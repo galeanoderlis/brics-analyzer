@@ -46,6 +46,6 @@ jobs:
     steps:
     - name: echo
       run: | 
-        echo ${{ env.MY_VAR }}
+        echo ${{ vars.MY_VAR }}
         echo ${{ secrets.MY_PASSWORD}}
       
