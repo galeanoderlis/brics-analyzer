@@ -40,12 +40,12 @@ jobs:
     # Ejecutar programa
     - name: Ejecutar análisis BRICS
       run: python main.py
-   mostrar-variables:
+  mostrar-variables:
     runs-on: ubuntu-latest
 
     steps:
-    - name: echo
-      run: | 
-        echo ${{ vars.MY_VAR }}
-        echo ${{ secrets.MY_PASSWORD}}
-      
+      - name: echo
+        run: |
+          echo ${{ vars.MY_VAR }}
+          echo ${{ secrets.MY_PASSWORD }}
+       
