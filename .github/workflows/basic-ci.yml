@@ -3,9 +3,9 @@ name: Análisis BRICS CI
 # Eventos que activan el workflow
 on:
   push:
-    branches: [ main ]
+    branches: [ staging ]
   pull_request:
-    branches: [ main ]
+    branches: [ staging ]
 
 # Trabajos a ejecutar
 jobs:
@@ -42,7 +42,7 @@ jobs:
       run: python main.py
   mostrar-variables:
     runs-on: ubuntu-latest
-    environment: prod
+    environment: stag
     steps:
       - name: echo
         run: |
